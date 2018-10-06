@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Speaker:</strong>
+  <%= @line.speaker %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @line.text %>
+</p>
+
+<p>
+  <strong>Episode Name:</strong>
+  <%= @line.episode.name %>
+</p>
+
+<p>
+  <strong>Episode Id:</strong>
+  <%= @line.episode.id %>
+</p>
+
+<%= link_to 'Edit', edit_line_path(@line) %> |
+<%= link_to 'Back', lines_path %>
